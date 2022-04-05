@@ -15,6 +15,12 @@ diffArrayLen(a1, a3); // => true
 
 function diffArrayLen(arr1, arr2) {
   // your code here...
+  if (arr1.length === arr2.length){
+    return false
+  }else {
+    return true
+  }
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
