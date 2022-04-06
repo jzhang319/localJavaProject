@@ -9,7 +9,14 @@ oddRange(6); // => [ 1, 3, 5 ]
 *******************************************************************************/
 
 function oddRange(end) {
-  // your code here...
+  let number = [];
+  for (let i = 1; i < end; i++) {
+    if (i % 2 !== 0) {
+      number.push(i)
+    }
+
+  }
+  return number;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

@@ -9,8 +9,14 @@ tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 
 function tripler(array) {
-  // your code here...
+  let answer = [];
+  for (let i = 0; i < array.length; i++) {
+    answer.push(array[i] * 3)
+
+  }
+  return answer;
 }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = tripler;
