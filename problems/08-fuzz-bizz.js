@@ -10,6 +10,16 @@ fuzzBizz(30) => [ 2, 4, 6, 7, 8, 10, 12, 16, 18, 20, 21, 22, 24, 26 ]
 
 function fuzzBizz(max) {
   // your code here...
+  let answer = []
+
+  for (let i = 2; i < max; i++){
+    if ( i % 2 === 0 && i % 7 !== 0){
+      answer.push(i)
+    }else if ( i % 7 === 0 && i % 2 !== 0){
+      answer.push(i)
+    }
+  }
+  return answer
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

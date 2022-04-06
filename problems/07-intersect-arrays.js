@@ -12,6 +12,16 @@ intersect(['a', 'b', 'c'], ['x', 'y', 'z']) => []
 
 function intersect(arr1, arr2) {
   // your code here...
+  let answer = []
+
+  for (let i = 0; i < arr1.length; i++){
+    for (let j = 0; j < arr2.length; j++){
+        if (arr1[i] === arr2[j]){
+          answer.push(arr1[i])
+        }
+    }
+  }
+  return answer
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

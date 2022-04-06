@@ -10,6 +10,10 @@ reverseString("Jump,-jump-for-joy") => "joy-for-jump-Jump,"
 
 function reverseString(string) {
   // your code here...
+  let word = string.split("-");
+
+  return word.reverse().join('-')
+  //console.log(word);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
