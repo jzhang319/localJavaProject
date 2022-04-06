@@ -10,8 +10,16 @@ mirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a
 
 function mirrorArray(array) {
   // your code here...
-  let backward = array.slice(0)
-  console.log(array.concat(backward.reverse()))
+
+  let answer = []
+
+  for (let i = 0; i < array.length; i++){
+    answer.push(array[i])
+  }
+  for (let j = array.length - 1; j >= 0; j--){
+    answer.push(answer[j])
+  }
+  return answer
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
